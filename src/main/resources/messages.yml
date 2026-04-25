@@ -1,0 +1,56 @@
+# Русские сообщения плагина
+prefix: "&6[InternationalAuth] &r"
+
+# Регистрация
+register-usage: "&cИспользование: /register <пароль> <подтверждение>"
+register-passwords-mismatch: "&cПароли не совпадают!"
+register-password-too-short: "&cПароль слишком короткий! Минимум {min} символов."
+register-password-too-long: "&cПароль слишком длинный! Максимум {max} символов."
+register-password-invalid-pattern: "&cПароль не соответствует требованиям! {description}"
+register-password-blacklisted: "&cЭтот пароль слишком простой! Используйте более сложный пароль."
+register-ip-limit: "&cС вашего IP адреса уже зарегистрировано {current}/{max} аккаунтов! Лимит исчерпан."
+register-already-registered: "&cВы уже зарегистрированы! Используйте /login"
+register-success: "&aРегистрация успешна! Теперь используйте /login"
+
+# Логин
+login-usage: "&cИспользование: /login <пароль>"
+login-not-registered: "&cВы не зарегистрированы! Используйте /register"
+login-wrong-password: "&cНеверный пароль!"
+login-success: "&aАвторизация успешна! Добро пожаловать."
+login-already-authorized: "&cВы уже авторизованы!"
+
+# Смена пароля
+changepassword-key-usage: "&cИспользование: /changepassword <новый пароль> <секретный ключ>"
+changepassword-wrong-key: "&cНеверный секретный ключ!"
+changepassword-success: "&aПароль успешно изменён!"
+
+# Сессия
+session-expired: "&cВремя сессии истекло. Используйте /login"
+not-authorized: "&cВы не авторизованы! Используйте /login или /register"
+
+# Секретный ключ
+setkey-usage: "&cИспользование: /setkey <секретный ключ> <подтверждение>"
+setkey-too-short: "&cСекретный ключ слишком короткий! Минимум 8 символов."
+setkey-too-long: "&cСекретный ключ слишком длинный! Максимум 16 символов."
+setkey-mismatch: "&cКлючи не совпадают!"
+setkey-success: "&aСекретный ключ успешно установлен!"
+setkey-already-set: "&cУ вас уже есть секретный ключ!"
+
+# Админ команды
+reload-success: "&aПлагин перезагружен! Конфигурация и сообщения обновлены."
+auth-reset-usage: "&cИспользование: /auth reset <ник>"
+auth-reset-success: "&aПароль игрока {player} сброшен!"
+auth-player-not-found: "&cИгрок не найден!"
+
+# Таймер кика
+login-timeout-kick: "&cВы не авторизовались за 30 секунд!"
+
+# Плейсхолдеры
+info-registration-date: "&aДата регистрации: &f{date}"
+
+# Блокировка
+blocked-try-later: "&cВы заблокированы! Попробуйте снова через {minutes} минут(ы)."
+attempts-remaining: "&cОсталось попыток: {attempts} из 5. После 5 неудач - блокировка на 15 минут."
+
+# Ошибки
+database-error: "&cОшибка базы данных! Обратитесь к администратору."

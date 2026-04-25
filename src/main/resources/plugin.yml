@@ -1,0 +1,42 @@
+name: InternationalAuth
+version: 1.1.0
+main: com.example.internationalauth.InternationalAuth
+api-version: 1.21
+author: Devive
+description: Система регистрации и авторизации с MySQL
+softdepend: [PlaceholderAPI]
+
+commands:
+  register:
+    description: Регистрация на сервере
+    usage: /register <пароль> <подтверждение>
+    aliases: [reg]
+  login:
+    description: Авторизация на сервере
+    usage: /login <пароль>
+    aliases: [l]
+  changepassword:
+    description: Смена пароля через секретный ключ
+    usage: /changepassword <новый пароль> <секретный ключ>
+  setkey:
+    description: Установка секретного ключа
+    usage: /setkey <ключ> <подтверждение>
+  auth:
+    description: Администрирование плагина
+    usage: /auth reload | /auth reset <ник> | /auth clearcache | /auth accounts <ник>
+    permission: internationalauth.admin
+
+permissions:
+  internationalauth.admin:
+    description: Доступ к админ командам
+    default: op
+  internationalauth.bypass.iplimit:
+    description: Обход лимита регистраций с одного IP
+    default: op
+
+tab-complete:
+  auth:
+    - reload
+    - reset
+    - clearcache
+    - accounts

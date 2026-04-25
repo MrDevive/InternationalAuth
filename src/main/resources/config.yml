@@ -1,0 +1,41 @@
+# MySQL configuration
+mysql:
+  host: 127.0.1.31
+  port: 3306
+  database: international_minecraft_auth
+  username: root
+  password: root
+
+# Password settings
+password:
+  min-length: 6
+  max-length: 30
+  pattern: "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{6,30}$"
+  pattern-description: "&cПароль должен содержать: заглавные буквы, строчные буквы и цифры (6-30 символов)"
+  blacklist:
+    - "123456"
+    - "password"
+    - "qwerty"
+    - "123456789"
+    - "12345"
+    - "12345678"
+    - "111111"
+    - "123123"
+    - "abc123"
+    - "admin"
+    - "qwerty123"
+
+# Session settings (минуты)
+session-timeout: 60
+
+# Security settings
+security:
+  max-failed-attempts: 5
+  block-duration-minutes: 15
+  login-timeout-seconds: 30
+  max-registrations-per-ip: 3
+  auto-login-by-uuid: true
+
+# Cache settings
+cache:
+  password-cache-minutes: 5

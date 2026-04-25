@@ -1,0 +1,22 @@
+# Папки со скомпилированными файлами
+target/
+out/
+build/
+
+# Настройки IDE
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+.vscode/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Скомпилированные классы
+*.class
+
+# Логи
+*.log
